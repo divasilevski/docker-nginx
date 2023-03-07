@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NGINX WEB SERVER</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+        line-height: inherit;
+        background-color: #082032;
+        color: #0A81AB;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .title {
+        max-width: 600px;
+        padding: 40px 20px;
+        font-size: 38px;
+        text-align: center;
+      }
+      a {
+        padding: 0 20px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 44px;
+      }
+      a:hover {
+        opacity: 0.7;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="title">
+        Nginx server with two app on&nbsp;one host across proxy pass
+      </div>
+      <div>
+        <a href="/vue">Vue</a>
+        <a href="/react">React</a>
+      </div>
+    </div>
+  </body>
+</html>

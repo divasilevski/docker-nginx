@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  react-app:
+    build: ./react-app
+    ports:
+      - 3001:3000
+    command: |
+      bash -c 'serve -s /app/build'
+  vue-app:
+    build: ./vue-app
+    ports:
+      - 3002:3000
+    command: |
+      bash -c 'npm run preview'
+  nginx:
+    build: .
+    ports:
+      - 8080:80
+    depends_on:
+      - react-app
+      - vue-app
